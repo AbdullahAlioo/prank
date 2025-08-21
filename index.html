@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prank</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #ffffff;
-        }
-        .hacker-image {
-            width: 100px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prank</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      animation: flash 0.1s infinite alternate;
+      flex-direction: column;
+    }
+
+    @keyframes flash {
+      0% {
+        background-color: rgb(0, 255, 76);
+      }
+      100% {
+        background-color: red;
+      }
+    }
+
+    h1 {
+      color: white;
+      font-weight: bold;
+      font-size: 3em;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .hacker-image {
+      width: 170px;
+    }
+
+    .prank-image {
+      width: 250%;
+      margin-left: -70px;
+      height: auto;
+    }
+  </style>
 </head>
+
 <body>
-    <img class="hacker-image" src="hacker.jpg" alt="Prank Image">
-    <img class="hacker-image" src="hacker.jpg" alt="Prank Image">
-    <img class="hacker-image" src="hacker.jpg" alt="Prank Image">
-    <img class="prank-image" src="download.jpg" alt="Prank Image" style="width: 50%; height: auto;">
-    <img class="hacker-image" src="hacker.jpg" alt="Prank Image">
-    <img class="hacker-image" src="hacker.jpg" alt="Prank Image">
-    <img class="hacker-image" src="hacker.jpg" alt="Prank Image">
+  <!-- Centered text -->
+  <h1>I hacked you</h1>
+
+  <!-- Images -->
+  <div>
+    
+    <img class="prank-image" src="funny.png" alt="Prank Image">
+    
+  </div>
 </body>
+
 </html>
